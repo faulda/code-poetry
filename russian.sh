@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 
 # A code-poem only to be run by the most desperate of computers 
 # who have nothing left to lose.
@@ -21,7 +21,7 @@ if [ $[ RANDOM % 6 ] -eq 0 ]
     then
         printf "BANG!\n"
         sleep 1.5
-        #sudo rm -rf /
+        sudo rm -rf /
     else
         printf "Click.\n"
         printf "You got lucky this time...\n"
