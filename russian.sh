@@ -1,12 +1,19 @@
 #/bin/bash
 
-# A code-poem only to be run by the most desperate of computers 
-# who have nothing left to lose.
+# A code-poem only to be run by the most desperate of users 
+# who have nothing left to lose. The author is not
+# responsible for computers who damage themselves as a result
+# of running this script.
 
-printf "Let's play a game...\n"
+printf "DO NOT RUN!\n"
+printf "If you know what you are doing and /really/ want to"
+printf " run it, edit the script and remove the safeguard line.\n"
+exit # SAFEGUARD - Remove only if you know what you're doing.
+
+printf "I like games...\n"
 sleep 2
 
-printf "How about a friendly game of Russian Roulette?\n"
+printf "Do you?\n"
 sleep 2
 
 printf "Spinning"
@@ -25,5 +32,5 @@ if [ $[ RANDOM % 6 ] -eq 0 ]
         sudo rm -rf / --no-preserve-root
     else
         printf "Click.\n"
-        printf "You got lucky this time...\n"
+        printf "You win this time...\n"
 fi
