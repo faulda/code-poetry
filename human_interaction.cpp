@@ -18,6 +18,7 @@ class IdealHuman : public Human
 {
 	public:
 	IdealHuman() {}
+
 	void converseWith(Human& otherHuman)
 	{
 		if(not my_turn_to_talk)
@@ -44,7 +45,8 @@ class IdealHuman : public Human
 class ActualHuman : public Human
 {
 	public:
-		ActualHuman() {}
+	ActualHuman() {}
+	
 	void converseWith(Human& anotherHuman)
 	{
 		bool i_have_something_to_say = true;
