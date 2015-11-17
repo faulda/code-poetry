@@ -10,6 +10,9 @@ printf "If you know what you are doing and /really/ want to"
 printf " run it, edit the script and remove the safeguard line.\n"
 exit # SAFEGUARD - Remove only if you know what you're doing.
 
+
+# Actual 'poem' beginning
+
 printf "I like games...\n"
 sleep 2
 
